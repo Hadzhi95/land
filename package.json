@@ -1,0 +1,48 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack serve --env port=3000",
+    "dev": "NODE_ENV=development webpack serve --config webpack.config.js",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "build:win": "SET NODE_ENV=production webpack --config webpack.config.js",
+    "build:dev": "NODE_ENV=development webpack --config webpack.config.js",
+    "build:watch": "cross-env NODE_ENV=development node ./node_modules/webpack/bin/webpack.js --config webpack.config.js --watch",
+    "build:watch:win": "SET NODE_ENV=development node ./node_modules/webpack/bin/webpack.js --config webpack.config.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "intl-tel-input": "^17.0.21",
+    "libphonenumber": "^0.0.10",
+    "libphonenumber-js": "^1.10.24",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-phone-number-input": "^3.2.19",
+    "react-router-dom": "^6.3.0",
+    "react-scroll": "^1.8.9",
+    "swiper": "^9.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.5",
+    "postcss-loader": "^7.0.2",
+    "sass": "^1.45.1",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.4"
+  }
+}

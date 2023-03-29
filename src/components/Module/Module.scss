@@ -1,0 +1,280 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    /* width: 1200px; */
+    background: #F4F4F4;
+    border: 1px solid rgba(30, 30, 30, 0.13);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+// .content_container {
+//     display: flex;
+//     justify-content: start;
+//     align-items: center;
+//     flex-direction: row;
+//     margin-left: 40px;
+//     margin-top: 39px
+// }
+
+.content_container {
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 0;
+    margin-top: 0px;
+    gap: 15px;
+    width: 100%;
+}
+
+.module {
+    width: 134px;
+    height: 63.14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7.01571px;
+    border: 0px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21.0471px;
+    line-height: 133%;
+    color: #F9F9F9;
+    margin-right: 40px;
+}
+
+.content {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 127%;
+    color: rgba(30, 30, 30, 0.8);
+}
+
+// .plus {
+//     position: absolute;
+//     margin-left: 1050px;
+//     cursor: pointer;
+// }
+
+.plus {
+    position: static;
+    margin-left: 0;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 94%;
+}
+.vector1 {
+    margin-top: -20px;
+    margin-left: 24.5px;
+    width: 36px;
+    height: 0px;
+    border: 2px solid;
+}
+
+.vector2 {
+    margin-top: -15px;
+    margin-left: 41px;
+    width: 0px;
+    height: 36px;
+    border: 2px solid;
+}
+
+.elipse {
+    width: 19px;
+    height: 19px;
+    background: #4BDFDF;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.element {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 156%;
+    color: rgba(30, 30, 30, 0.8);
+}
+
+.line {
+    margin-top: 50px;
+    margin-left: 13px;
+    position: absolute;
+    width: 581px;
+    border: 2px solid rgba(112, 26, 199, 0.3);
+}
+
+.elements_container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.el_contain {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+@media (max-width:430px) {
+    .container {
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        flex-direction: column;
+        height: auto;
+        width: 99%;
+        margin: 0 auto;
+        background: #F4F4F4;
+        border: 1px solid rgba(30, 30, 30, 0.13);
+        border-radius: 10px;
+        margin-bottom: 20px;
+        padding-top: 32px;
+        padding-left: 32px;
+        padding-bottom: 24px;
+        box-sizing: border-box;
+    }
+
+    .content_container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: row;
+        margin-left: 0;
+        margin-top: 0px;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .module {
+        width: 75.15px;
+        height: 35.41px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3.93464px;
+        border: 0px;
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11.8039px;
+        line-height: 16px;
+        color: #F9F9F9;
+        margin-right: 0;
+    }
+
+    .content {
+        font-family: "Gotham Pro";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16.825px;
+        line-height: 21px;
+        color: rgba(30, 30, 30, 0.8);
+        width: 85%;
+    }
+
+    .element {
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15.1425px;
+        line-height: 24px;
+        color: rgba(30, 30, 30, 0.8);
+        width: 220px;
+    }
+
+    .elements_container {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .el_contain {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: row;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .elipse {
+        width: 10px;
+        height: 10px;
+        background: #4BDFDF;
+        border-radius: 50%;
+        margin: 10px;
+    }
+
+    .plus {
+        position: static;
+        margin-left: 0;
+        cursor: pointer;
+        margin-top: 0;
+    }
+
+    .cont {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 94%;
+        justify-content: space-between;
+    }
+
+    .vector1 {
+        margin-top: -7px;
+        margin-left: 24px;
+        width: 13px;
+        height: 0px;
+        border: 1px solid;
+    }
+
+    .vector2 {
+        margin-top: -13px;
+        margin-left: 29.48px;
+        width: 0px;
+        height: 13px;
+        border: 1px solid;
+    }
+
+    .line {
+        margin-top: 0px;
+        margin-left: 8px;
+        position: static;
+        width: 245px;
+        border: 1px solid rgba(112, 26, 199, 0.3);
+    }
+
+
+    // .container {
+    //     display: none
+    // }
+}
