@@ -52,11 +52,7 @@ function Land17() {
             <div className={styles.colum}>
               {/* <input className={styles.input} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)} /> */}
-               <PhoneInput className={styles.input} style={{
-              background: 'background: rgb(86 81 81 / 5%);',
-              border: 'none',
-              outline: 'none'
-            }} countries={['IN']} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
+               <PhoneInput className={styles.input} countries={['IN']} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
               onChange={value =>setPhoneNumber(value)} />
 
               <input className={styles.input} placeholder="Name" />

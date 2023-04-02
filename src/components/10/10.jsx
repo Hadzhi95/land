@@ -51,11 +51,7 @@ function Land10() {
         <div>
           <div className={styles.form_input}>
             <div className={styles.colum}>
-              <PhoneInput className={styles.input} style={{
-              background: '#4BDFDF',
-              border: 'none',
-              outline: 'none'
-            }} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
+              <PhoneInput className={styles.input} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
                countries={['IN']} onChange={value => setPhoneNumber(value)} />
               <input className={styles.input} placeholder="Name" />
             </div>
