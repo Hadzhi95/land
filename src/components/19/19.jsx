@@ -63,7 +63,11 @@ function Land19() {
 {/*     background: rgba(249,249,249,.01);
     border: none;
     outline: none; */}
-              <PhoneInput className={styles.input} countries={['IN']} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
+              <PhoneInput className={styles.input} style={{
+              background: 'background: #8a2aeb6e',
+              border: 'none',
+              outline: 'none'
+            }} countries={['IN']} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
                 onChange={value => setPhoneNumber(value)} />
               <input className={styles.input} placeholder="Name" />
             </div>

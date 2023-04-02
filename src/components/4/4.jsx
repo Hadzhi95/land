@@ -55,7 +55,11 @@ function Land4() {
         </div>
         <div className={styles.form_input}>
           <div className={styles.col}>
-            <PhoneInput className={styles.email}  countries={['IN']} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
+            <PhoneInput className={styles.email} style={{
+              background: '#701AC7',
+              border: 'none',
+              outline: 'none'
+            }} countries={['IN']} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
               onChange={value => setPhoneNumber(value)} />
             <input className={styles.email} placeholder="Name" type='text' />
           </div>

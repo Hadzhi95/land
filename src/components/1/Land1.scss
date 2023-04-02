@@ -250,6 +250,23 @@
 
 
 @media (max-width: 430px) {
+    .container {
+        // max-width: 1400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    
+        height: auto;
+        flex-direction: column;
+        transform-style: preserve-3d;
+        min-width: auto;
+        padding-bottom: 20px;
+        //=============
+        // overflow: hidden;
+        // height: 932px;
+    
+    }
     .desktop_content_timer_backgraund {
         display: none;
     }
@@ -322,18 +339,18 @@
     .arrowBlue {
         display: block;
         position: absolute;
-        width: 100%;
+        width: 400px;
         top: 0px;
-        height: 74%;
+        height: 570px;
         left: -183px;
     }
 
     .arrowGreen {
         display: block;
         position: absolute;
-        width: 100%;
-        left: 117px;
-        height: 74%;
+        width: 400px;
+        left: 133px;
+        height: 570px;
         min-width: 215px;
         top: 0px;
 
@@ -342,10 +359,10 @@
     .arrowPink {
         display: block;
         position: absolute;
-        width: 100%;
-        left: -61px;
+        width: 400px;
+        left: -45px;
         top: 0px;
-        height: 74%;
+        height: 570px;
         min-width: 215px;
 
     }
@@ -366,12 +383,13 @@
     }
 
     .content_timer_backgraund {
-        position: absolute;
+        position: fixed;
         display: block;
-        top: 220px;
+        top: 384px;
         right: 0px;
         z-index: 7;
-        width: 100%;
+        width: 430px;
+        height: 486px;
     }
 
     .back_color {
