@@ -60,7 +60,7 @@ function Popup({ setIsPopup }) {
                         <div className={styles.first_inputs}>
                             {/* <input type="tel" className={styles.tel} /> */}
 
-                            <PhoneInput className={styles.tel} countries={['IN']} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
+                            <PhoneInput className={styles.tel} style={{backgroundColor: 'white'}} countries={['IN']} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
                                 onChange={value => setPhoneNumber(value)} />
                             <input type="text" className={styles.name} placeholder='Name' />
                         </div>

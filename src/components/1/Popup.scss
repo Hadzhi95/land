@@ -44,6 +44,7 @@
     text-align: left;
     padding-left: 10px;
     border: rgba(30, 30, 30, 0.15);
+    background-color: #F9F9F9;
 }
 
 
@@ -121,11 +122,6 @@
 
 }
 
-.PhoneInput {
-	/* This is done to stretch the contents of this component. */
-	display: flex;
-	align-items: center;
-}
 
 @media (max-width:430px) {
     .overlay {
