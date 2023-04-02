@@ -1,6 +1,6 @@
 .container{
-    padding: 20px 350px;
-    margin-bottom: 20px;
+    width: 80%;
+    margin: 0 auto 20px;
 }
 
 .title{
@@ -12,4 +12,22 @@
 div{
     font-weight: bold;
     font-size: 20px;
+}
+
+@media (max-width:430px) {
+    .container{
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+    
+    .title{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    div{
+        font-weight: bold;
+        font-size: 20px;
+    }
 }

@@ -52,13 +52,13 @@ function Land17() {
             <div className={styles.colum}>
               {/* <input className={styles.input} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)} /> */}
-               <PhoneInput className={styles.input} style={{
-              background: 'background: rgb(86 81 81 / 5%);',
-              border: 'none',
-              outline: 'none'
-            }} countries={['IN']} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
-              onChange={value =>setPhoneNumber(value)} />
-
+              {/* <PhoneInput className={styles.input} countries={['IN']} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
+                onChange={value => setPhoneNumber(value)} /> */}
+              <label>
+                <input className={styles.tel} countries={['IN']} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
+                  onChange={e => setPhoneNumber(e.target.value)} />
+                <span className={styles.icon_search}></span>
+              </label>
               <input className={styles.input} placeholder="Name" />
             </div>
             <div className={styles.colum}>
@@ -70,7 +70,7 @@ function Land17() {
               <span className={styles.checkbox__text}>By clicking the checkbox you agree to our privacy policy, terms of use and training agreement.</span>
             </div>
           </div>
-          
+
         </div>
       </div>
     </>

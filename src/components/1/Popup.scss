@@ -32,9 +32,31 @@
     margin-bottom: 20px;
 }
 
+label {
+    width: 331px;
+    position: relative;
+    display: inline-block;
+    margin: 0
+}
+
+input[type='tel'] {
+    padding-left: 50px;
+}
+
+span.icon_search {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-image: url(india.svg);
+    background-size: 100% 100%;
+}
+
 .tel {
     height: 82px;
-    width: 331px;
+    width: 100%;
     border-radius: 7px;
     font-family: Gilroy;
     font-size: 15px;
@@ -44,8 +66,10 @@
     text-align: left;
     padding-left: 10px;
     border: rgba(30, 30, 30, 0.15);
-    background-color: #F9F9F9;
+    
+    // background: rgba(249, 249, 249, 0.25);
 }
+
 
 
 

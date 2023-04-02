@@ -44,24 +44,21 @@ function Popup({ setIsPopup }) {
 
     return (
         <>
-            {/* {showPopup &&  */}
+            
             (<div onClick={closeModal} className={styles.overlay} >
-                {/* {showModal && ( // показываем модальное окно, если флаг true
-                    <div className={styles.modal}>
-                        <div className={styles.modal__text}>
-                            <p>That's one small step for a man, one giant step for your career!</p>
-                            <p>Our career coaching team will call you back shortly</p>
-                        </div>
-                    </div>
-                )} */}
                 <div className={styles.registration_form}>
                     <h1 className={styles.title}>Register for a career consultation</h1>
                     <form className={styles.inputs} onSubmit={handleFormSubmit}>
                         <div className={styles.first_inputs}>
                             {/* <input type="tel" className={styles.tel} /> */}
 
-                            <PhoneInput className={styles.tel} style={{backgroundColor: 'white', padding: '10px'}} countries={['IN']} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
-                                onChange={value => setPhoneNumber(value)} />
+                            {/* <PhoneInput className={styles.tel} style={{backgroundColor: 'white', padding: '10px'}} countries={['IN']} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
+                                onChange={value => setPhoneNumber(value)} /> */}
+                            <label>
+                                <input className={styles.tel} countries={['IN']} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
+                                    onChange={e => setPhoneNumber(e.target.value)} />
+                                <span className={styles.icon_search}></span>
+                            </label>
                             <input type="text" className={styles.name} placeholder='Name' />
                         </div>
                         <div className={styles.second_inputs}>
@@ -75,7 +72,6 @@ function Popup({ setIsPopup }) {
                     </form>
                 </div>
             </div>)
-            {/* } */}
         </>
     )
 }

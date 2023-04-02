@@ -1,20 +1,45 @@
-.container{
-    padding: 20px 250px;
-    margin-bottom: 20px;
+.container {
+    width: 80%;
+    margin: 0 auto 20px;
 }
 
-.title{
+.title {
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
 }
-.contract{
+
+.contract {
     display: flex;
     justify-content: center;
     font-weight: bolder;
     margin-top: 20px;
 }
 
-div{
+div {
     font-weight: 200;
+}
+
+@media (max-width:430px) {
+    .container {
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+
+    .title {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contract {
+        display: flex;
+        justify-content: center;
+        font-weight: bolder;
+        margin-top: 20px;
+    }
+
+    div {
+        font-weight: 200;
+    }
 }
