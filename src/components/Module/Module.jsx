@@ -78,7 +78,7 @@ function Module({ number, name, elements = [] }) {
           {elements.map((el) => (
             <div key={Math.random()} className={styles.elements_container}>
               <div className={styles.el_contain}>
-                <div className={styles.elipse}></div>
+                <div className={styles.elipse} style={open === number ? {rotate: '45deg' } : {}}></div>
                 <div className={styles.element}>
                   {el}
                 </div>

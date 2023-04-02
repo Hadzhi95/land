@@ -7,7 +7,7 @@ import allNeeded from './allNeeded.svg'
 function Land3() {
   return (
     <>
-      <div id='syllabus' className={styles.container}>
+      <div className={styles.container}>
         <img className={styles.img} src={img} />
         <img src={cards} alt="cards" className={styles.cards} />
         <img src={allNeeded} alt="all needed" className={styles.all_needed} />

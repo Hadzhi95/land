@@ -15,8 +15,8 @@ import card from './Card.svg'
 function Land4() {
 
   const inputRef = useRef(null);
-  const [phoneNumber, setPhoneNumber] = useState();
-  
+  const [phoneNumber, setPhoneNumber] = useState('+91');
+
   // useEffect(() => {
   //   const input = IntlTelInput(inputRef.current, {
   //     initialCountry: 'auto',
@@ -49,12 +49,14 @@ function Land4() {
     <>
       <div className={styles.container}>
         <img src={card} className={styles.card} />
-        <h1 className={styles.title}>Are you one<br />of them?</h1>
-        <p className={styles.apply}>Apply for a free career consultation now</p>
+        <div className={styles.info}>
+          <h1 className={styles.title}>Are you one<br/>of them?</h1>
+          <p className={styles.apply}>Apply for a free career<br/>consultation now</p>
+        </div>
         <div className={styles.form_input}>
           <div className={styles.col}>
-            <PhoneInput className={styles.email} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
-              onChange={value =>setPhoneNumber(value)} />
+            <PhoneInput className={styles.email} countries={['IN']} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
+              onChange={value => setPhoneNumber(value)} />
             <input className={styles.email} placeholder="Name" type='text' />
           </div>
           <div className={styles.col}>

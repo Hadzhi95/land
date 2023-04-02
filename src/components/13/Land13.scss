@@ -98,7 +98,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-        margin: 10px 19px 10px 0;
+    margin: 10px 19px 10px 0;
 }
 
 .row {
@@ -121,10 +121,55 @@
     display: none;
 }
 
+@media (min-width: 430px) and (max-width: 1750px) {
+    .cont {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 0 20px;
+        align-items: center;
+        position: relative;
+    }
+
+    .info_box {
+        margin: 0 0 28px 0;
+        max-width: 600px;
+        width: 100%;
+        min-height: 374px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        display: flex;
+        align-items: flex-start;
+        min-height: 1205px;
+        height: auto;
+        max-width: 1220px;
+        width: 100%;
+        z-index: 1;
+        flex-direction: column;
+    }
+
+
+}
+
 @media (max-width:430px) {
-    .cont{
+    .cont {
         padding: 0 3%;
     }
+
     .arrows,
     .image1,
     .image2,
@@ -154,8 +199,9 @@
         display: block;
         position: absolute;
         z-index: -4;
-        margin-top: -1680px;
-        margin-left: 99px;
+        height: 31%;
+        margin-top: -1995px;
+        margin-left: 17px;
         overflow: hidden;
     }
 
@@ -244,6 +290,7 @@
         width: 100%;
         height: auto;
     }
+
     .line {
         width: 100%;
         height: 20px;

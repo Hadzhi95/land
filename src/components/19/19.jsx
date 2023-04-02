@@ -12,7 +12,7 @@ import styles from './Land19.scss';
 
 function Land19() {
   const inputRef = useRef(null);
-  const [phoneNumber, setPhoneNumber] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('+91');
 
   // useEffect(() => {
   //   const input = intlTelInput(inputRef.current, {
@@ -61,7 +61,7 @@ function Land19() {
               {/* <input className={styles.input} placeholder="Number" type="tel" ref={inputRef} value={phoneNumber}
                 onChange={(e) => setPhoneNumber(e.target.value)} /> */}
 
-              <PhoneInput className={styles.input} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
+              <PhoneInput className={styles.input} countries={['IN']} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
                 onChange={value => setPhoneNumber(value)} />
               <input className={styles.input} placeholder="Name" />
             </div>

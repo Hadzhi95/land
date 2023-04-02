@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
 
 .container {
     // max-width: 1400px;
@@ -26,7 +26,6 @@
     // margin-left: 36%;
     // ==============
     margin-left: 28%
-
 }
 
 .content {
@@ -97,6 +96,7 @@
 }
 
 .block:hover {
+    background-image: url('background.png');
     background-color: rgb(75, 223, 223);
     border-radius: 10px;
 
@@ -121,6 +121,146 @@
 
 }
 
+@media (min-width: 895px) and (max-width: 1750px) {
+    .title {
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 80px;
+        padding: 0 0 59px 0;
+        line-height: 125%;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    .content {
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        /* margin: 0 auto; */
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .container {
+        margin-top: 87px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        z-index: 100;
+        width: 100%;
+        height: 984px;
+        flex-direction: column;
+        background-color: #701AC7;
+
+        //=======
+        overflow: hidden;
+    }
+
+    .block {
+        z-index: 1;
+        width: 100%;
+        height: 650px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .miniBack {
+        display: none;
+    }
+
+    .content_container {
+        width: 80%;
+        height: 650px;
+        background-color: #701AC7;
+        background-image: url(miniBack.svg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        border-radius: 10px;
+    }
+}
+@media (min-width: 431px) and (max-width: 895px) {
+    .title {
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        padding: 0 0 59px 0;
+        line-height: 125%;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    .info_container {
+        margin-bottom: 500px;
+        display: flex;
+        text-justify: auto;
+        text-align: center;
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 133%;
+        color: #F9F9F9;
+        margin-top: 117px;
+    }
+    .content {
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        /* margin: 0 auto; */
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .container {
+        margin-top: 87px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        z-index: 100;
+        width: 100%;
+        height: 984px;
+        flex-direction: column;
+        background-color: #701AC7;
+
+        //=======
+        overflow: hidden;
+    }
+
+    .block {
+        z-index: 1;
+        width: 100%;
+        height: 650px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .miniBack {
+        display: none;
+    }
+
+    .content_container {
+        width: 80%;
+        height: 650px;
+        background-color: #701AC7;
+        background-image: url(miniBack.svg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        border-radius: 10px;
+    }
+}
+
 @media (max-width: 430px) {
 
     .arrow,
@@ -136,10 +276,11 @@
         font-size: 33px;
         line-height: 45px;
         width: 100%;
-        min-width: 198px;
+        max-width: 198px;
         height: 90px;
         color: #F9F9F9;
         margin-bottom: 25px;
+        margin-left: 10px;
     }
 
     .content {
@@ -182,9 +323,8 @@
         background-size: cover;
         margin: auto;
         padding: 0 16px 22px;
-
-
     }
+
 
     .block:nth-child(even) {
         background: url(block01.png) no-repeat;
@@ -203,6 +343,7 @@
         line-height: 40px;
         color: #F9F9F9;
         margin-top: 31px;
+        margin-bottom: 20px;
     }
 
     .info_text {

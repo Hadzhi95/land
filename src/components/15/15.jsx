@@ -14,7 +14,7 @@ import styles from './Land15.scss';
 function Land15() {
 
   const inputRef = useRef(null);
-  const [phoneNumber, setPhoneNumber] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('+91');
 
   // useEffect(() => {
   //   const input = intlTelInput(inputRef.current, {
@@ -54,7 +54,7 @@ function Land15() {
             <div className={styles.colum}>
               {/* <input className={styles.input} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)} /> */}
-              <PhoneInput className={styles.input} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
+              <PhoneInput className={styles.input} countries={['IN']} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
               onChange={value =>setPhoneNumber(value)} />
               <input className={styles.input} placeholder="Name" />
             </div>

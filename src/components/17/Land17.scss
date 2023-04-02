@@ -18,7 +18,6 @@
     width: 100%;
     flex-direction: row;
     background-color: #1E1E1E;
-    flex-direction: row;
 }
 
 
@@ -144,6 +143,194 @@
     cursor: pointer;
 }
 
+@media (min-width: 1095px) and (max-width: 1750px) {
+   
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 77px 20px 0;
+        min-height: 380px;
+        height: auto;
+        width: 100%;
+        flex-direction: row;
+        background-color: #1E1E1E;
+        flex-direction: row;
+    }
+    .title {
+        padding: 14px 0 0 0;
+        max-width: 519px;
+        width: 100%;
+        min-height: 180px;
+        font-family: "Gotham Pro";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 115%;
+        color: #F9F9F9;
+        height: auto;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1094px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 77px 20px 0;
+        min-height: 380px;
+        height: auto;
+        width: 100%;
+        flex-direction: row;
+        background-color: #1E1E1E;
+        flex-direction: row;
+    }
+    .title {
+        padding: 14px 0 0 0;
+        max-width: 519px;
+        width: 100%;
+        min-height: 180px;
+        font-family: "Gotham Pro";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 115%;
+        color: #F9F9F9;
+        height: auto;
+    }
+    .btn {
+        width: 221.26px;
+        height: 82.81px;
+        background: #701AC7;
+        border-radius: 10px;
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 125%;
+        color: #F9F9F9;
+        margin: 9.24px 9.24px 9.24px 0;
+        border: 0px;
+        cursor: pointer;
+    }
+    .email {
+        box-sizing: border-box;
+        width: 221.26px;
+        height: 82.81px;
+        background: rgba(249, 249, 249, 0.25);
+        border: 0.7px solid rgba(30, 30, 30, 0.15);
+        border-radius: 7px;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15.4754px;
+        line-height: 19px;
+        color: rgba(30, 30, 30, 0.6);
+        margin: 9.24px 9.24px 9.24px 0;
+        padding: 31px;
+    }
+    .input {
+        box-sizing: border-box;
+        width: 221.26px;
+        height: 82.81px;
+        background: rgba(249, 249, 249, 0.25);
+        border: 0.7px solid rgba(30, 30, 30, 0.15);
+        border-radius: 7px;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15.4754px;
+        line-height: 19px;
+        color: rgba(30, 30, 30, 0.6);
+        margin: 9.24px 9.24px 9.24px 0;
+        padding: 31px;
+    }
+    
+}
+
+@media (min-width: 431px) and (max-width: 699px) {
+    .form_input {
+        padding: 0;
+    }
+    
+    .colum {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 77px 20px 0;
+        min-height: 380px;
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        background-color: #1E1E1E;
+    }
+    .title {
+        padding: 0;
+        max-width: 519px;
+        width: 100%;
+        height: auto;
+        font-family: "Gotham Pro";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 115%;
+        color: #F9F9F9;
+        height: auto;
+    }
+    .btn {
+        width: 221.26px;
+        height: 82.81px;
+        background: #701AC7;
+        border-radius: 10px;
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 125%;
+        color: #F9F9F9;
+        margin: 9.24px 9.24px 9.24px 0;
+        border: 0px;
+        cursor: pointer;
+    }
+    .email {
+        box-sizing: border-box;
+        width: 221.26px;
+        height: 82.81px;
+        background: rgba(249, 249, 249, 0.25);
+        border: 0.7px solid rgba(30, 30, 30, 0.15);
+        border-radius: 7px;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15.4754px;
+        line-height: 19px;
+        color: rgba(30, 30, 30, 0.6);
+        margin: 9.24px 9.24px 9.24px 0;
+        padding: 31px;
+    }
+    .input {
+        box-sizing: border-box;
+        width: 221.26px;
+        height: 82.81px;
+        background: rgba(249, 249, 249, 0.25);
+        border: 0.7px solid rgba(30, 30, 30, 0.15);
+        border-radius: 7px;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15.4754px;
+        line-height: 19px;
+        color: rgba(30, 30, 30, 0.6);
+        margin: 9.24px 9.24px 9.24px 0;
+        padding: 31px;
+    }
+}
 @media (max-width:430px) {
     
     .container {

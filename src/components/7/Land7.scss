@@ -10,7 +10,7 @@
 }
 
 .title {
-    width: 430px;
+    max-width: 430px;
     height: 150px;
     font-family: 'Gotham Pro';
     font-style: normal;
@@ -74,6 +74,42 @@
 .container_mobile {
     display: none;
 }
+
+@media (min-width: 500px) and (max-width: 1750px) {
+    .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        height: auto;
+        padding: 60px 20px 60px;
+        width: 100%;
+        background-color: #701AC7;
+        flex-direction: row;
+    }
+
+    .title {
+        max-width: 430px;
+        height: auto;
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 143%;
+        color: #FFFFFF;
+    }
+
+    .info {
+        height: auto;
+        width: 100%;
+        max-width: 260px;
+    }
+    .btn {
+        max-width: 322px;
+        width: 100%;
+        height: 80.5px;
+    }
+}
+
 
 @media (max-width:430px) {
     img {

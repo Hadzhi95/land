@@ -120,6 +120,32 @@
     gap: 10px;
 }
 
+@media (max-width: 1750px) {
+    .container {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 75px 0 57px 0;
+        height: 40px;
+        box-sizing: content-box;
+        max-width: 1200px;
+        width: 100%;
+        background-color: #1E1E1E;
+        flex-direction: row;
+    }
+    .row_main {
+        margin: 0 auto;
+        padding: 0;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        box-sizing: content-box;
+        max-width: 1200px;
+        width: 100%;
+        background-color: #1E1E1E;
+    }
+}
 
 @media (max-width:430px) {
     .messangers_icons {

@@ -56,6 +56,7 @@
     padding: 15px 0 0 0;
     color: #701AC7;
     margin-bottom: 25px;
+
 }
 
 .second {
@@ -71,6 +72,7 @@
     line-height: 52px;
     color: #4BDFDF;
     margin-bottom: 25px;
+    padding: 0;
 }
 
 .jobs1 {
@@ -85,7 +87,12 @@
     color: #701AC7;
     opacity: 0.6;
     margin-bottom: 30px;
+    gap: 12px;
+
+
 }
+
+
 
 .jobs2 {
     display: flex;
@@ -99,34 +106,104 @@
     color: rgb(75, 223, 223);
     opacity: 0.6;
     margin-bottom: 30px;
+    gap: 12px;
 }
 
 .figure1 {
-    height: 325px;
-    // width: 285px;
-    background-color: #4BDFDF;
+    height: 0;
+    background-color: #4bdfdf;
     border-radius: 21.6818px;
+    transition: height 1s ease-in-out;
 }
 
+.figure1--animate {
+    animation-name: grow;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+@keyframes grow {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 325px;
+  }
+}
+
+
 .figure2 {
-    height: 433px;
+    height: 0;
+    // height: 433px;
     // width: 285px;
     background-color: #701AC7;
     border-radius: 21.6818px;
+    transition: height 1s ease-in-out;
+    
+}
+.figure2--animate {
+    animation-name: grow2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+@keyframes grow2{
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 433px;
+  }
 }
 
+
+
 .figure3 {
-    height: 542px;
+    height: 0px;
     // width: 285px;
     background-color: #4BDFDF;
     border-radius: 21.6818px;
+    transition: height 1s ease-in-out;
+}
+
+.figure3--animate {
+    animation-name: grow3;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+@keyframes grow3{
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 542px;
+  }
 }
 
 .figure4 {
-    height: 650px;
+    // height: 650px;
+    height: 0px;
     // width: 285px;
     background-color: #701AC7;
     border-radius: 21.6818px;
+    transition: height 1s ease-in-out;
+
+}
+
+.figure4--animate {
+    animation-name: grow4;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+}
+@keyframes grow4{
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 650px;
+  }
 }
 
 .footer {
@@ -157,7 +234,87 @@
     background-color: #701AC7;
 }
 
+@media (min-width: 700px) and (max-width: 1750px) {
+  .first {
+    width: 100%;
+
+}
+
+.second {
+    width: 100%;
+}
+
+    .container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        flex-direction: column;
+        height: 1039px;
+    }
+}
+
 @media (max-width:430px) {
+    .figure1--animate {
+        animation-name: grow;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 0s;
+    }
+    @keyframes grow {
+      0% {
+        height: 0;
+      }
+      100% {
+        height: 144px;
+      }
+    }
+
+    .figure2--animate {
+        animation-name: grow2;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 0s;
+    }
+    @keyframes grow2 {
+      0% {
+        height: 0;
+      }
+      100% {
+        height: 173px;
+      }
+    }
+
+    .figure3--animate {
+        animation-name: grow3;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 0s;
+    }
+    @keyframes grow3 {
+      0% {
+        height: 0;
+      }
+      100% {
+        height: 201px;
+      }
+    }
+
+    .figure4--animate {
+        animation-name: grow4;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 0s;
+    }
+    @keyframes grow4 {
+      0% {
+        height: 0;
+      }
+      100% {
+        height: 230px;
+      }
+    }
     .footer {
         width: 69px;
         height: 8px;
@@ -165,7 +322,7 @@
         font-size: 8px;
         line-height: 8px;
         color: rgba(30, 30, 30, 0.8);
-        margin-left: 62px;
+        margin-left: 80%;
         margin-top: 13px
     }
 
@@ -205,9 +362,10 @@
     }
 
     .arrow {
-        width: 20px;
+        width: 22px;
+        height: 22px;
         margin-top: 15px;
-        margin-left: 62%;
+        margin-left: 72%;
         padding-top: 10px;
     }
 
@@ -248,28 +406,28 @@
         height: 144px;
         // width: 72px;
         background-color: #4BDFDF;
-        border-radius: 21.6818px;
+        border-radius: 5.78px
     }
 
     .figure2 {
         height: 173px;
         // width: 72px;
         background-color: #701AC7;
-        border-radius: 21.6818px;
+        border-radius: 5.78px
     }
 
     .figure3 {
         height: 201px;
         // width: 72px;
         background-color: #4BDFDF;
-        border-radius: 21.6818px;
+        border-radius: 5.78px
     }
 
     .figure4 {
         height: 230px;
         // width: 72px;
         background-color: #701AC7;
-        border-radius: 21.6818px;
+        border-radius: 5.78px
     }
 
     .content {
@@ -279,7 +437,7 @@
         justify-content: center;
         align-items: flex-end;
         flex-direction: row;
-        padding: 0 3%;
+        padding: 0 1%;
     }
 
     .first {
@@ -308,6 +466,7 @@
         line-height: 14px;
         color: #4BDFDF;
         margin-bottom: 6px;
+        padding: 0;
     }
 
     .jobs1 {

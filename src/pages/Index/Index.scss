@@ -172,6 +172,42 @@
   font-style: normal;
 }
 
+// Готам ПРО
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../../Templates/Fonts/Gotham Pro/gothampro.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../../Templates/Fonts/Gotham Pro/gothampro_light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../../Templates/Fonts/Gotham Pro/gothampro_medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../../Templates/Fonts/Gotham Pro/gothampro_black.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("../../Templates/Fonts/Gotham Pro/gothampro_bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* Megacampus icons */
 @font-face {
   font-family: "megacampus-icons";
@@ -189,10 +225,10 @@
   align-items: center;
   flex-direction: column;
   margin: -8px;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   margin: 0;
   padding: 0;
   perspective: 1px;
   transform-style: preserve-3d;
-  // overflow-x: auto;
+  overflow-x: auto;
 }

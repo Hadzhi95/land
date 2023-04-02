@@ -78,6 +78,52 @@
 }
 
 
+@media (min-width: 500px) and (max-width: 1750px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        height: auto;
+        width: 100%;
+        background-color: rgb(75, 223, 223);
+        flex-direction: row;
+    }
+    .col {
+        max-width: 519px;
+        width: 100%;
+        height: auto;
+    }
+    .inform {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 1085px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        height: auto;
+        width: 100%;
+        background-color: rgb(75, 223, 223);
+        flex-direction: column;
+    }
+    .col {
+        max-width: 519px;
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .inform {
+        width: 100%;
+        height: auto;
+    }
+}
+
 @media (max-width:430px) {
     .container{
         padding: 0;

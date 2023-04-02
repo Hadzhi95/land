@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Module from "../Module/Module";
 import styles from './Land6.scss';
 
+
 function Land6() {
   const [more, setMore] = useState(true);
 
@@ -86,16 +87,20 @@ function Land6() {
 
   return (
     <>
-      <div className={styles.container}>
+      <div id='syllabus' className={styles.container}>
+
         <div className={styles.title}>
           What is in the course for you
         </div>
         <div className={styles.cont}>
           {!more ? modules?.slice(0,4).map((el, i) => (
             <Module number={i + 1} name={el[0]} elements={el[1]} />
-          )) : modules?.map((el, i) => (
-            <Module number={i + 1} name={el[0]} elements={el[1]} />
-          ))}
+            )) : modules?.map((el, i) => (
+              <Module number={i + 1} name={el[0]} elements={el[1]} />
+              ))}
+              {/* <img src={greenarrow} alt="" />
+              <img src="" alt="" />
+              <img src="" alt="" /> */}
 
 
 
@@ -103,17 +108,17 @@ function Land6() {
             <Module number={i} name={el[0]} elements={el[1]} />
           ))} */}
           <div className={styles.career_container}>
-            <div className={styles.plus}>
+            {/* <div className={styles.plus}>
               <div className={styles.vector2}></div>
               <div className={styles.vector1}></div>
-            </div>
+            </div> */}
             <div className={styles.career}>
               Career center
             </div>
           </div>
 
         </div>
-        {!more ? <button className={styles.btn_mobile_show} onClick={() => setMore(!more)}>Watch more</button> : <button className={styles.btn_mobile_hide} onClick={() => setMore(!more)}>Hide</button>}
+        {/* {!more ? <button className={styles.btn_mobile_show} onClick={() => setMore(!more)}>Watch more</button> : <button className={styles.btn_mobile_hide} onClick={() => setMore(!more)}>Hide</button>} */}
         {/* <button className={styles.btn_mobile} onClick={() => setMore(!more)}>Watch more</button> */}
       </div>
     </>

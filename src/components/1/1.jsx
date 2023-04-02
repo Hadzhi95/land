@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import MobileMenu from "../MobileMenu/MobileMenu";
 import { Link } from 'react-scroll'
 
-
+import HighQuality from './HighQuality.jpg'
 import styles from './Land1.scss';
 import arrow from './Arrow.svg';
 import arrowBlue from './arrow-blue.svg';
@@ -11,15 +11,18 @@ import arrowPink from './arrow-pink.svg';
 import backgroundTimer from './background-timer.svg';
 import image from './image.svg';
 import logo from './Logo.svg';
+import arrBackGreen from './arrow-background-green.png';
 import menu from './Меню.png';
 import desktopBg from './desktop-bg.png';
+import Popup from './Popup';
 
 
-// function scrollToRef(ref) {
-//   ref.current.scrollIntoView({ behavior: 'smooth' })
-// }
+
 
 function Land1() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isPopup, setIsPopup] = useState(false);
+
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -27,11 +30,13 @@ function Land1() {
     seconds: 0
   });
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
 
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
-    console.log(isMenuOpen)
+  };
+  const handlePopupClick = () => {
+    setIsPopup(true);
   };
 
 
@@ -57,9 +62,19 @@ function Land1() {
   return (
     <>
       <div className={styles.container}>
+
         <img className={styles.arrow} src={arrow} alt='' />
         <img className={styles.image} src={image} alt='' />
+
+        {/* <div className={styles.arr_back}>
+          <img className={styles.arr_back_green} src={arrBackGreen} alt='' />
+          <img className={styles.arr_back_blue} src={arrBackGreen} alt='' />
+          <img className={styles.arr_back_red} src={arrBackGreen} alt='' />
+        </div> */}
         <header className={styles.header}>
+          <img className={styles.arrowBlue} src={arrowBlue} alt='' />
+          <img className={styles.arrowGreen} src={arrowGreen} alt='' />
+          <img className={styles.arrowPink} src={arrowPink} alt='' />
           <Link activeClass="active" to="syllabus" spy={true} smooth={true} duration={500} className={styles.header_btn}>
             SYLLABUS
           </Link>
@@ -92,13 +107,13 @@ function Land1() {
               get up-to-date practical skills, and
               secure yourself an exciting high-paid job in trending field of Digital Marketing
             </div>
-            <img className={styles.arrowBlue} src={arrowBlue} alt='' />
+            {/* <img className={styles.arrowBlue} src={arrowBlue} alt='' />
             <img className={styles.arrowGreen} src={arrowGreen} alt='' />
-            <img className={styles.arrowPink} src={arrowPink} alt='' />
+            <img className={styles.arrowPink} src={arrowPink} alt='' /> */}
           </div>
           <div className={styles.content_timer_container}>
             <div className={styles.content_timer_title}>
-              Next batch closes in
+              Admissions close in
             </div>
             <div className={styles.time}>
               {
@@ -122,10 +137,12 @@ function Land1() {
             <div className={styles.end}>
               Apply for a free consultation from our career expert now
             </div>
-            <button className={styles.submit_btn}>
+            <button onClick={handlePopupClick} className={styles.submit_btn}>
               Submit
             </button>
-            {/* <div className={styles.back_color}></div> */}
+            {isPopup && (
+              <Popup setIsPopup={setIsPopup} />
+            )}
           </div>
           <img src={backgroundTimer} className={styles.content_timer_backgraund} />
           <img src={desktopBg} className={styles.desktop_content_timer_backgraund} />

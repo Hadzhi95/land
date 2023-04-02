@@ -10,7 +10,7 @@ import styles from './Land10.scss';
 
 function Land10() {
   const inputRef = useRef(null);
-  const [phoneNumber, setPhoneNumber] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('+91');
 
   // useEffect(() => {
   //   const input = intlTelInput(inputRef.current, {
@@ -52,7 +52,7 @@ function Land10() {
           <div className={styles.form_input}>
             <div className={styles.colum}>
               <PhoneInput className={styles.input} defaultCountry="IN" labels={en} placeholder="Phone Number" type="tel" ref={inputRef} value={phoneNumber}
-                onChange={value => setPhoneNumber(value)} />
+               countries={['IN']} onChange={value => setPhoneNumber(value)} />
               <input className={styles.input} placeholder="Name" />
             </div>
             <div className={styles.colum}>

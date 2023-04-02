@@ -27,8 +27,13 @@ import x5Mobile from './x5group-mobile.png';
 import fourMobile from './four-seasons-mobile.png';
 import sberMobile from './sber-mobile.png';
 import hiltonMobile from './hilton-mobile.png';
-
 import diplomMobile from './diplom-mobile.png';
+
+import SwiperCore, { Autoplay } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.css";
+
+SwiperCore.use([Autoplay]);
 
 function Land14() {
   const ref = useRef();
@@ -51,16 +56,16 @@ function Land14() {
                 <img className={styles.image} src={image1} />
               </swiper-slide>
               <swiper-slide key={Math.random()}>
-                <img className={styles.image} src={image142} style={{width: "1070px", height: "713px"}}/>
+                <img className={styles.image} src={image142} style={{ width: "1070px", height: "713px" }} />
               </swiper-slide>
               <swiper-slide key={Math.random()}>
-                <img className={styles.image} src={image143} style={{width: "1070px", height: "713px"}}/>
+                <img className={styles.image} src={image143} style={{ width: "1070px", height: "713px" }} />
               </swiper-slide>
               <swiper-slide key={Math.random()}>
-                <img className={styles.image} src={image144} style={{width: "1070px", height: "713px"}}/>
+                <img className={styles.image} src={image144} style={{ width: "1070px", height: "713px" }} />
               </swiper-slide>
               <swiper-slide key={Math.random()}>
-                <img className={styles.image} src={image145} style={{width: "1070px", height: "713px"}}/>
+                <img className={styles.image} src={image145} style={{ width: "1070px", height: "713px" }} />
               </swiper-slide>
             </swiper-container>
           </div>
@@ -73,10 +78,10 @@ function Land14() {
             {/* <img className={styles.inv1} src={sber1} alt="" /> */}
             <img className={styles.invent} src={hilton} alt="" />
             <img className={styles.inv} src={four} alt="" />
-          
+
             <img className={styles.sberMobile} src={sberMobile} alt="" />
-            <img className={styles.hiltonMobile} src={hilton} alt="" style={{width: "250px"}} />
-            <img className={styles.fourMobile} src={fourMobile} alt=""  />
+            <img className={styles.hiltonMobile} src={hilton} alt="" style={{ width: "250px" }} />
+            <img className={styles.fourMobile} src={fourMobile} alt="" />
           </div>
           <div className={styles.row1}>
             <img className={styles.inv} src={x5} alt="" />

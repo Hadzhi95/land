@@ -26,7 +26,7 @@ function Land2() {
             </div>
             <div className={styles.block}>
               <div className={styles.info_container}>
-                Stable and high-paid jobd
+                Stable and high-paid job
               </div>
               <div className={styles.info_text}>
                 Skilled digital marketers command high salaries, which increase as they gain experience.

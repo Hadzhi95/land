@@ -52,18 +52,19 @@
     padding: 31px;
 }
 
-.email::placeholder{
-    color: #F9F9F9CC;
-}
+// .email::placeholder {
+//     color: #F9F9F9CC;
+// }
 
-.PhoneInputInput {
-    flex: 1;
-    min-width: 0;
-    background-color: #701AC7;
-    border: none;
-    color: #F9F9F9CC !important;
-    outline: none;
-}
+// .PhoneInputInput {
+//     flex: 1;
+//     min-width: 0;
+//     background-color: #701AC7;
+//     border: none;
+//     color: #F9F9F9CC !important;
+//     outline: none;
+
+// }
 
 
 .btn {
@@ -82,7 +83,7 @@
     cursor: pointer;
 }
 
-.form_input{
+.form_input {
     padding: 10px 0 10px 20px;
 }
 
@@ -100,7 +101,8 @@
 .checkbox {
     cursor: pointer;
 }
-.checkbox__text{
+
+.checkbox__text {
     display: block;
     padding: 0 0 0 10px;
 }
@@ -110,11 +112,283 @@
     display: none;
 }
 
+@media (min-width: 1080px) and (max-width: 1750px) {
+    .card {
+        display: none;
+    }
+
+    .container {
+        padding: 70px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;;
+        height: auto;
+        width: 100%;
+        flex-direction: row;
+        background-color: #701AC7;
+    }
+
+    .title {
+        margin-bottom: 20px;
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 78px;
+        line-height: 90px;
+        /* or 115% */
+
+
+        color: #F9F9F9;
+    }
+
+    .apply {
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 45px;
+        /* or 150% */
+
+
+        color:#ffffffb8;
+    }
+
+    .title,
+    .apply {
+        display: block;
+    }
+}
+
+@media (min-width: 995px) and (max-width: 1080px) {
+    .card {
+        display: none;
+    }
+
+    .container {
+        padding: 70px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;;
+        height: auto;
+        width: 100%;
+        flex-direction: row;
+        background-color: #701AC7;
+    }
+
+    .title {
+        margin-bottom: 20px;
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 58px;
+        // line-height: 90px;
+        /* or 115% */
+
+
+        color: #F9F9F9;
+    }
+
+    .apply {
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        // line-height: 45px;
+        /* or 150% */
+
+
+        color:#ffffffb8;
+    }
+
+    .title,
+    .apply {
+        display: block;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 995px) {
+    .col {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .btn {
+        width: 221.26px;
+        height: 82.81px;
+        background: #4BDFDF;
+        border-radius: 10px;
+        border: 0px;
+        color: white;
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 125%;
+        margin: 10px 10px 10px 0;
+        cursor: pointer;
+    }
+    .email {
+        box-sizing: border-box;
+        width: 221.26px;
+        height: 82.81px;
+        background: rgba(249, 249, 249, 0.05);
+        border: 0.7px solid rgba(249, 249, 249, 0.15);
+        border-radius: 7px;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15.4754px;
+        line-height: 19px;
+        color: rgba(249, 249, 249, 0.8);
+        margin: 9.24px 9.24px 9.24px 0;
+        padding: 31px;
+    }
+    .card {
+        display: none;
+    }
+
+    .container {
+        padding: 70px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;;
+        height: auto;
+        width: 100%;
+        flex-direction: row;
+        background-color: #701AC7;
+    }
+
+    .title {
+        margin-bottom: 20px;
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        // line-height: 90px;
+        /* or 115% */
+
+
+        color: #F9F9F9;
+    }
+
+    .apply {
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        // line-height: 45px;
+        /* or 150% */
+
+
+        color:#ffffffb8;
+    }
+
+    .title,
+    .apply {
+        display: block;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 750px) {
+    .info {
+        margin-bottom: 20px;
+    }
+    .form_input {
+        padding: 0
+    }
+    
+    .col {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .btn {
+        width: 221.26px;
+        height: 82.81px;
+        background: #4BDFDF;
+        border-radius: 10px;
+        border: 0px;
+        color: white;
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 125%;
+        margin: 10px 10px 10px 0;
+        cursor: pointer;
+    }
+    .email {
+        box-sizing: border-box;
+        width: 221.26px;
+        height: 82.81px;
+        background: rgba(249, 249, 249, 0.05);
+        border: 0.7px solid rgba(249, 249, 249, 0.15);
+        border-radius: 7px;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15.4754px;
+        line-height: 19px;
+        color: rgba(249, 249, 249, 0.8);
+        margin: 9.24px 9.24px 9.24px 0;
+        padding: 31px;
+    }
+    .card {
+        display: none;
+    }
+
+    .container {
+        padding: 70px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        background-color: #701AC7;
+    }
+
+    .title {
+        margin-bottom: 20px;
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        // line-height: 90px;
+        /* or 115% */
+
+
+        color: #F9F9F9;
+    }
+
+    .apply {
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        // line-height: 45px;
+        /* or 150% */
+
+
+        color:#ffffffb8;
+    }
+
+    .title,
+    .apply {
+        display: block;
+    }
+}
+
 
 @media (max-width:430px) {
     .form_input {
-            padding: 0 3%;
+        padding: 0 3%;
     }
+
     .container {
         display: block;
         height: 100%;
@@ -128,6 +402,7 @@
     .card {
         display: none;
     }
+
     .check {
         padding: 0 3%;
     }
@@ -149,7 +424,7 @@
 
     .apply {
         display: block;
-        width: 100%;
+        max-width: 235px;
         height: auto;
         padding: 0 3%;
         font-family: 'Gotham Pro';
@@ -184,7 +459,7 @@
         margin: 10px 3%;
         padding: 31px;
     }
-    
+
 
     .btn {
         width: 100%;
