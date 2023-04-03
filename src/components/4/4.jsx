@@ -39,7 +39,7 @@ function Land4() {
           </div>
           <div className={styles.check}>
             <input className={styles.checkbox} type="checkbox" />
-            <span className={styles.checkbox__text}>By clicking the checkbox you agree to our privacy policy, terms of use and training agreement.</span>
+            <span className={styles.checkbox__text}>By clicking the checkbox you agree to our privacy policy and training agreement.</span>
           </div>
         </div>
       </div>
