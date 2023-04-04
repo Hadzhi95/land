@@ -1,0 +1,191 @@
+.container {
+    // display: flex;
+    // align-items: center;
+    // width: 100%;
+    // flex-direction: column;
+
+
+
+    //  ===============
+    padding: 0 0 0 360px;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+}
+
+.container>* {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.arrow {
+    position: absolute;
+    transition: 2s;
+    top: 0;
+    left: 86px;
+    opacity: 1;
+    z-index: -9;
+    height: 870px;
+}
+
+.cont {
+    width: 100%;
+}
+
+
+.title {
+    margin-top: 94px;
+    margin-bottom: 74px;
+    display: flex;
+    width: 100%;
+    font-family: "Gotham Pro";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 113%;
+    color: rgba(30, 30, 30, 0.8);
+}
+
+.career_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 143px;
+    background: #701AC7;
+    border: 1px solid rgba(30, 30, 30, 0.13);
+    border-radius: 10px;
+    margin-bottom: 100px;
+    padding: 0 26px;
+}
+
+.career {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 127%;
+    color: #F9F9F9;
+    // margin-left: 40px;
+}
+
+
+.plus {
+    cursor: pointer;
+}
+
+.vector1 {
+    margin-top: -22px;
+    margin-left: 22.5px;
+    width: 36px;
+    height: 0px;
+    border: #4BDFDF 2px solid;
+}
+
+.vector2 {
+    margin-top: -15px;
+    margin-left: 41px;
+    width: 0px;
+    height: 36px;
+    border: #4BDFDF 2px solid;
+}
+
+.btn_mobile_show,
+.btn_mobile_hide {
+    display: none;
+}
+
+
+
+@media (min-width: 700px) and (max-width: 1750px) {
+    .container {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:430px) {
+    .btn_mobile_show {
+        display: block;
+        width: 248.87px;
+        height: 62.22px;
+        background: #701AC7;
+        border-radius: 4.83905px;
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16.591px;
+        line-height: 21px;
+        color: #F9F9F9;
+        border: 0;
+    }
+
+    .btn_mobile_hide {
+        display: block;
+        width: 248.87px;
+        height: 62.22px;
+        background: #4BDFDF;
+        border-radius: 4.83905px;
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16.591px;
+        line-height: 21px;
+        color: #F9F9F9;
+        border: 0;
+    }
+
+    .container {
+        padding: 40px 3%;
+    }
+
+
+    .career_container {
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        flex-direction: column;
+        height: auto;
+        width: 99%;
+        margin: 0 auto;
+        border: 1px solid rgba(30, 30, 30, 0.13);
+        border-radius: 10px;
+        margin-bottom: 27px;
+        padding-top: 27px;
+        padding-left: 32px;
+        padding-bottom: 24px;
+        box-sizing: border-box;
+    }
+
+    .career {
+        font-family: Gotham Pro;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .title {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        display: flex;
+        text-align: start;
+        width: 100%;
+        height: 90px;
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 33px;
+        line-height: 45px;
+        color: rgba(30, 30, 30, 0.8);
+    }
+
+}

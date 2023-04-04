@@ -62,7 +62,7 @@ function Module({ number, name, elements = [] }) {
           </div>
 
           {elements.length ? (
-            <div className={styles.plus}>
+            <div style={open ? { rotate: '45deg' }: {}} className={styles.plus}>
               <div style={number % 2 ? { borderColor: '#701AC7' } : { borderColor: '#4BDFDF' }} className={styles.vector2}></div>
               <div style={number % 2 ? { borderColor: '#701AC7' } : { borderColor: '#4BDFDF' }} className={styles.vector1}></div>
             </div>

@@ -3,6 +3,7 @@
     width: 100%;
     padding: 0 0 72px 0;
     position: relative;
+   
 }
 
 .container {
@@ -16,12 +17,14 @@
 .container>* {
     width: 100%;
     max-width: 1200px;
+    
 }
 
 .image {
     position: absolute;
     height: 100%;
     z-index: 0;
+    left: -170px;
 }
 
 .faq {
@@ -100,6 +103,7 @@
         font-size: 33px;
         line-height: 32px;
         color: rgba(30, 30, 30, 0.8);
+        padding: 0;
     }
 
     .image {

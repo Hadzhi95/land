@@ -2,9 +2,81 @@ import React, { useState } from "react";
 import Module from "../Module/Module";
 import styles from './Land6.scss';
 
+import arrowBlue from '../1/arrow-blue.svg';
+import arrowGreen from '../1/arrow-green.svg';
+import arrowPink from '../1/arrow-pink.svg';
+import { useEffect } from "react";
+import { useSpring, animated } from 'react-spring';
+
+const Animation = () => {
+
+  const [arrow1Props, setArrow1Props] = useSpring(() => ({
+    from: {
+      opacity: 0,
+      left: -50
+    },
+    to: {
+      opacity: 1,
+      left: 0
+    },
+    config: {
+      duration: 500
+    }
+  }));
+
+  const [arrow2Props, setArrow2Props] = useSpring(() => ({
+    from: {
+      opacity: 0,
+      left: -50
+    },
+    to: {
+      opacity: 1,
+      left: 250
+    },
+    config: {
+      duration: 500
+    }
+  }));
+
+  const [arrow3Props, setArrow3Props] = useSpring(() => ({
+    from: {
+      opacity: 0,
+      left: -50
+    },
+    to: {
+      opacity: 1,
+      left: 600
+    },
+    config: {
+      duration: 500
+    }
+  }));
+
+  return (
+    <div className="animation">
+      
+      <animated.img
+        className={styles.arrow}
+        src={arrowBlue}
+        style={arrow1Props}
+      />
+      <animated.img
+        className={styles.arrow}
+        src={arrowGreen}
+        style={arrow2Props}
+      />
+      <animated.img
+        className={styles.arrow}
+        src={arrowPink}
+        style={arrow3Props}
+      />
+    </div>
+  );
+};
 
 function Land6() {
   const [more, setMore] = useState(true);
+  const [animate, setAnimate] = useState(false);
 
   // const elements = ['Classic marketing',
   //   'Digital marketer portrait. What and how?',
@@ -85,18 +157,23 @@ function Land6() {
   ]
   ];
 
+  useEffect(()=>{
+    setAnimate(true);
+  }, [])
+
   return (
     <>
       <div id='syllabus' className={styles.container}>
+      {animate && <Animation />}
 
         <div className={styles.title}>
           What is in the course for you
         </div>
         <div className={styles.cont}>
           {!more ? modules?.slice(0,4).map((el, i) => (
-            <Module number={i + 1} name={el[0]} elements={el[1]} />
+            <Module key={i} number={i + 1} name={el[0]} elements={el[1]} />
             )) : modules?.map((el, i) => (
-              <Module number={i + 1} name={el[0]} elements={el[1]} />
+              <Module key={i}  number={i + 1} name={el[0]} elements={el[1]} />
               ))}
               {/* <img src={greenarrow} alt="" />
               <img src="" alt="" />

@@ -7,40 +7,60 @@ import image94 from './image94.png';
 import image95 from './image95.png';
 import leftArrow from './LeftArrow.svg';
 import rightArrow from './RightArrow.svg';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from 'swiper';
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
 
 function Land9() {
-  const ref = useRef();
+  const [swiper, setSwiper] = React.useState(null);
+  const slidePrev = () => {
+    swiper.slidePrev();
+  };
+  const slideNext = () => {
+    swiper.slideNext();
+  };
   return (
     <>
       <div className={styles.container}>
         <div className={styles.mentors__wrapper}>
         <div className={styles.row}>
-          <img onClick={() => ref.current.swiper.slidePrev()} className={styles.arrow__left} src={leftArrow} />
+          <img onClick={() => slidePrev()} className={styles.arrow__left} src={leftArrow} />
           <div className={styles.swiper}>
-            <swiper-container
-              slides-per-view='1'
-              speed="500"
-              ref={ref}
-              navigation="true"
+          <Swiper
+              modules={[Autoplay]}
+              spaceBetween={50}
+              slidesPerView={1}
+              onSwiper={(s) => {
+                console.log("initialize swiper", s);
+                setSwiper(s);
+              }}
+              loop
+              autoplay={{
+                delay: 2000,
+                pauseOnMouseEnter: true,
+                disableOnInteraction: false
+               }}
             >
-              <swiper-slide key={Math.random()}>
+              <SwiperSlide key={Math.random()}>
                   <img className={styles.swiper_images}  src={image1} />
-              </swiper-slide>
-              <swiper-slide key={Math.random()}>
+              </SwiperSlide>
+              <SwiperSlide key={Math.random()}>
                   <img className={styles.swiper_images} src={image92} style={{ width: "600px", height: "662px", objectFit: "cover"}}/>
-              </swiper-slide>
-              <swiper-slide key={Math.random()}>
+              </SwiperSlide>
+              <SwiperSlide key={Math.random()}>
                   <img className={styles.swiper_images} src={image93} style={{ width: "600px", height: "662px", objectFit: "cover" }}/>
-              </swiper-slide>
-              <swiper-slide key={Math.random()}>
+              </SwiperSlide>
+              <SwiperSlide key={Math.random()}>
                   <img className={styles.swiper_images} src={image94} style={{ width: "600px", height: "662px", objectFit: "cover" }}/>
-              </swiper-slide>
-              <swiper-slide key={Math.random()}>
+              </SwiperSlide>
+              <SwiperSlide key={Math.random()}>
                   <img className={styles.swiper_images} src={image95} style={{ width: "600px", height: "662px", objectFit: "cover" }}/>
-              </swiper-slide>
-            </swiper-container>
+              </SwiperSlide>
+            </Swiper>
           </div>
-          <img onClick={() => ref.current.swiper.slideNext()} className={styles.arrow__right} src={rightArrow} />
+          <img onClick={() => slideNext()} className={styles.arrow__right} src={rightArrow} />
         </div>
         <div className={styles.col}>
           <div className={styles.title}>

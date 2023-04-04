@@ -1,0 +1,105 @@
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 998;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0px;
+    text-align: center;
+}
+.menu_header {
+    padding: 27px 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.close__button{
+    background-color: inherit;
+    position: absolute;
+    border: 0;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 24px;
+}
+.close__button:hover .close__icon path{
+    transition: .3s;
+    fill: #FFFFFF;
+    stroke: #FFFFFF;
+}
+.burger_megacampus_logo {
+    width: 112px;
+}
+
+.navigation__list{
+    padding: 24px 0 33px 0;
+    list-style: none;
+}
+.navigation__item{
+    padding: 7.5px 0;
+    display: block;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #F9F9F9;
+    cursor: pointer;
+    position: relative;
+}
+.navigation__item::after{
+    content: '';
+    transition: .3s;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #F9F9F9;
+}
+.navigation__item:hover::after{
+    width: 100%;
+}
+.contact__item{
+    padding: 0 0 10.2px 0 ;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.8642px;
+    line-height: 13px;
+    color: rgba(249, 249, 249, 0.4);
+}
+.contact{
+    padding: 7px 0 0 0;
+    color:#F9F9F9;
+    text-decoration: none;
+}
+.contact__item * {
+    display: block;
+}
+.social__wrapper{
+    padding: 20px 0 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.social__block{
+    width: 112px;
+    display: flex;
+    justify-content: space-between;
+}
+.social__link{
+    transition: .3s;
+    opacity: 0.4;
+}
+.social__link:hover{
+    opacity: 1;
+}
+
+

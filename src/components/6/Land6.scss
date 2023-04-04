@@ -12,11 +12,22 @@
     align-items: flex-start;
     width: 100%;
     flex-direction: column;
+    position: relative;
 }
 
 .container>* {
     width: 100%;
     max-width: 1200px;
+}
+
+.arrow {
+    position: absolute;
+    transition: 2s;
+    top: 0;
+    left: 86px;
+    opacity: 1;
+    z-index: -9;
+    height: 870px;
 }
 
 .cont {

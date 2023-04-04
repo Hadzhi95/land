@@ -29,14 +29,18 @@ import sberMobile from './sber-mobile.png';
 import hiltonMobile from './hilton-mobile.png';
 import diplomMobile from './diplom-mobile.png';
 
-import SwiperCore, { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.css";
-
-SwiperCore.use([Autoplay]);
+import { Autoplay,  Navigation, Pagination } from 'swiper';
+import "swiper/swiper-bundle.min.css";
 
 function Land14() {
-  const ref = useRef();
+  const [swiper, setSwiper] = React.useState(null);
+  const slidePrev = () => {
+    swiper.slidePrev();
+  };
+  const slideNext = () => {
+    swiper.slideNext();
+  };
   return (
     <>
       <div className={styles.container}>
@@ -44,32 +48,44 @@ function Land14() {
           Our graduates are employed in
         </div>
         <div className={styles.row}>
-          <img onClick={() => ref.current.swiper.slidePrev()} className={styles.arrow__left} src={leftArrow} />
+          {/*<img onClick={() => slidePrev()} className={styles.arrow__left} src={leftArrow} />*/}
           <div className={styles.swiper}>
-            <swiper-container
-              slides-per-view='1'
-              speed="500"
-              ref={ref}
-              navigation="true"
+          <Swiper
+              modules={[Autoplay, Navigation, Pagination]}
+              spaceBetween={50}
+              slidesPerView={1}
+              onSwiper={(s) => {
+                console.log("initialize swiper", s);
+                setSwiper(s);
+              }}
+              navigation
+              pagination={{ clickable: true }}
+              onSlideChange={() => console.log('slide change')}
+              loop
+              autoplay={{
+                delay: 2000,
+                pauseOnMouseEnter: true,
+                disableOnInteraction: false
+               }}
             >
-              <swiper-slide key={Math.random()}>
+              <SwiperSlide key={Math.random()}>
                 <img className={styles.image} src={image1} />
-              </swiper-slide>
-              <swiper-slide key={Math.random()}>
+              </SwiperSlide>
+              <SwiperSlide key={Math.random()}>
                 <img className={styles.image} src={image142} style={{ width: "1070px", height: "713px" }} />
-              </swiper-slide>
-              <swiper-slide key={Math.random()}>
+              </SwiperSlide>
+              <SwiperSlide key={Math.random()}>
                 <img className={styles.image} src={image143} style={{ width: "1070px", height: "713px" }} />
-              </swiper-slide>
-              <swiper-slide key={Math.random()}>
+              </SwiperSlide>
+              <SwiperSlide key={Math.random()}>
                 <img className={styles.image} src={image144} style={{ width: "1070px", height: "713px" }} />
-              </swiper-slide>
-              <swiper-slide key={Math.random()}>
+              </SwiperSlide>
+              <SwiperSlide key={Math.random()}>
                 <img className={styles.image} src={image145} style={{ width: "1070px", height: "713px" }} />
-              </swiper-slide>
-            </swiper-container>
+              </SwiperSlide>
+            </Swiper>
           </div>
-          <img onClick={() => ref.current.swiper.slideNext()} className={styles.arrow__right} src={rightArrow} />
+          {/*<img onClick={() => slideNext()} className={styles.arrow__right} src={rightArrow} />*/}
         </div>
         <img src={diplomMobile} className={styles.diplomMobile} />
         <div className={styles.col}>

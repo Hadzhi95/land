@@ -1,27 +1,117 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import MobileMenu from "../MobileMenu/MobileMenu";
 import { Link } from 'react-scroll'
-
 import HighQuality from './HighQuality.jpg'
 import styles from './Land1.scss';
 import arrow from './Arrow.svg';
+import arrowBlue1 from './arrow-blue1.svg';
 import arrowBlue from './arrow-blue.svg';
 import arrowGreen from './arrow-green.svg';
+import arrowGreen1 from './arrow-green1.svg';
 import arrowPink from './arrow-pink.svg';
+import arrowPink1 from './arrow-pink1.svg';
 import backgroundTimer from './background-timer.svg';
 import image from './image.svg';
 import logo from './Logo.svg';
 import arrBackGreen from './arrow-background-green.png';
 import menu from './Меню.png';
 import desktopBg from './desktop-bg.png';
-import Popup from './Popup';
+//import Popup from '../Popup/Popup';
+import Popup from '../Popup/Popup_new';
+import { useSpring, animated } from 'react-spring';
+import bg from './bg.png'
 
+const Animation = () => {
+  const [bgProps, setBgProps] = useSpring(() => ({
+    from: {
+      opacity: 0
+    },
+    to: {
+      opacity: 1
+    },
+    config: {
+      duration: 1000
+    }
+  }));
 
+  const [arrow1Props, setArrow1Props] = useSpring(() => ({
+    from: {
+      opacity: 0,
+      left: -50
+    },
+    to: {
+      opacity: 1,
+      left: 0
+    },
+    config: {
+      duration: 500
+    }
+  }));
+
+  const [arrow2Props, setArrow2Props] = useSpring(() => ({
+    from: {
+      opacity: 0,
+      left: -50
+    },
+    to: {
+      opacity: 1,
+      left: 600
+    },
+    config: {
+      duration: 500
+    }
+  }));
+
+  const [arrow3Props, setArrow3Props] = useSpring(() => ({
+    from: {
+      opacity: 0,
+      left: -50
+    },
+    to: {
+      opacity: 1,
+      left: 250
+    },
+    config: {
+      duration: 500
+    }
+  }));
+
+  return (
+    <div className="animation">
+      
+      <animated.img
+        className={styles.arrow}
+        src={arrowBlue}
+        style={arrow1Props}
+      />
+      <animated.img
+        className={styles.arrow}
+        src={arrowGreen}
+        style={arrow2Props}
+      />
+      <animated.img
+        className={styles.arrow}
+        src={arrowPink}
+        style={arrow3Props}
+      />
+      <animated.img
+        className={styles.image}
+        src={bg}
+        style={bgProps}
+      />
+    </div>
+  );
+};
 
 
 function Land1() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isPopup, setIsPopup] = useState(false);
+  const [active, setIsActive] = useState(false);
+  const [animate, setAnimate] = useState(false);
+  
+  const buttonRef = useRef(null);
+  const buttonRect = buttonRef.current && buttonRef.current.getBoundingClientRect();
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -37,10 +127,12 @@ function Land1() {
   };
   const handlePopupClick = () => {
     setIsPopup(true);
+    setIsActive(true);
   };
 
 
   useEffect(() => {
+    setAnimate(true);
     const countdownDate = new Date("May 01, 2023 00:00:00").getTime();
 
     const interval = setInterval(() => {
@@ -62,9 +154,9 @@ function Land1() {
   return (
     <>
       <div className={styles.container}>
-
-        <img className={styles.arrow} src={arrow} alt='' />
-        <img className={styles.image} src={image} alt='' />
+        {animate && <Animation />}
+        {/*<img className={styles.arrow} src={arrow} alt='' />
+        <img className={styles.image} src={image} alt='' />*/}
 
         {/* <div className={styles.arr_back}>
           <img className={styles.arr_back_green} src={arrBackGreen} alt='' />
@@ -72,6 +164,9 @@ function Land1() {
           <img className={styles.arr_back_red} src={arrBackGreen} alt='' />
         </div> */}
         <header className={styles.header}>
+          <img className={styles.arrowBlue_mob} src={arrowBlue1} alt='' />
+          <img className={styles.arrowGreen_mob} src={arrowGreen1} alt='' />
+          <img className={styles.arrowPink_mob} src={arrowPink1} alt='' />
           <img className={styles.arrowBlue} src={arrowBlue} alt='' />
           <img className={styles.arrowGreen} src={arrowGreen} alt='' />
           <img className={styles.arrowPink} src={arrowPink} alt='' />
@@ -137,11 +232,11 @@ function Land1() {
             <div className={styles.end}>
               Apply for a free consultation from our career expert now
             </div>
-            <button onClick={handlePopupClick} className={styles.submit_btn}>
+            <button onClick={handlePopupClick} ref={buttonRef} className={styles.submit_btn}>
               Submit
             </button>
             {isPopup && (
-              <Popup setIsPopup={setIsPopup} />
+              <Popup setIsPopup={setIsPopup} active={active} y={Math.round(buttonRect?.top)}/>
             )}
           </div>
           <img src={backgroundTimer} className={styles.content_timer_backgraund} />
