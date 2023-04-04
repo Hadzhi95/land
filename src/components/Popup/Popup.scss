@@ -164,7 +164,9 @@ span.icon_search {
     cursor: pointer;
 }
 
-
+.checkbox {
+    vertical-align: middle;
+}
 
 .checkbox__text {
     font-family: Gilroy;
@@ -210,6 +212,7 @@ span.icon_search {
         line-height: 40px;
         margin-bottom: 24px;
     }
+
     .success_title:nth-child(1) {
         margin-bottom: 0;
     }
@@ -330,6 +333,10 @@ span.icon_search {
         color: white;
         border-color: #701AC7;
         cursor: pointer;
+    }
+
+    .checkbox {
+        vertical-align: middle;
     }
 
     .checkbox__text {
