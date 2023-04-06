@@ -1,0 +1,311 @@
+.main_cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #1E1E1E;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // padding: 80px 0px;
+    padding: 75px 0 57px 360px;
+    height: 40px;
+    box-sizing: content-box;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #1E1E1E;
+    flex-direction: row;
+}
+
+.policy {
+    margin: 50px 30px 30px 0;
+}
+
+.policy__link {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 21px;
+    color: #F9F9F9;
+    cursor: pointer;
+}
+
+.image {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row_main {
+    padding: 0 0 0 360px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    box-sizing: content-box;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #1E1E1E;
+}
+
+.messangers {
+    position: relative;
+    bottom: 15px;
+}
+
+// .messangers .image:hover {
+//     filter: brightness(0.8) hue-rotate(300deg);
+// }
+.messangers .image:hover {
+    transition: .3s;
+    opacity: 0.4;
+    filter: invert(17%) sepia(50%) saturate(6085%) hue-rotate(267deg) brightness(86%) contrast(99%);
+    cursor: pointer;
+}
+
+
+.contact_block,
+.contact_block2,
+.contacts {
+    display: none;
+}
+
+.contacts_main {
+    position: relative;
+    bottom: 15px;
+    font-family: 'Gotham Pro';
+    font-weight: 700;
+    font-style: bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: #F9F9F9;
+    padding: 0 0 64px 0;
+}
+
+.contact_info_main {
+    font-family: 'Gotham Pro';
+    font-style: regular;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
+    color: rgba(249, 249, 249, 0.4);
+}
+
+.contact_email_main,
+.contact_number_main {
+    font-family: 'Gotham Pro';
+    font-style: medium;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 100%;
+    color: #F9F9F9;
+}
+
+.messangers_icons {
+    display: none;
+}
+
+
+
+.contact_block_main,
+.contact_block2_main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 1750px) {
+    .container {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 75px 0 57px 0;
+        height: 40px;
+        box-sizing: content-box;
+        max-width: 1200px;
+        width: 100%;
+        background-color: #1E1E1E;
+        flex-direction: row;
+    }
+    .row_main {
+        margin: 0 auto;
+        padding: 0;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        box-sizing: content-box;
+        max-width: 1200px;
+        width: 100%;
+        background-color: #1E1E1E;
+    }
+}
+
+@media (max-width:430px) {
+    .messangers_icons {
+        display: flex;
+        width: 50%;
+    justify-content: space-between;
+    }
+
+   
+    a .icons:hover {
+        opacity: 0.4;
+        filter: invert(17%) sepia(50%) saturate(6085%) hue-rotate(267deg) brightness(86%) contrast(99%);
+        cursor: pointer;
+    }
+
+    .row_main {
+        display: none;
+    }
+
+    .container {
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .main_cont {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0;
+        width: 100%;
+        background-color: #1E1E1E;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+        background-color: #1E1E1E;
+        flex-direction: column;
+        // padding: 55px 0 35px;
+    }
+
+    .image {
+        margin: 0 0 30px;
+        cursor: pointer;
+
+    }
+
+    .policy {
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 17px;
+        color: #F9F9F9;
+        margin: 0 0 15px 0;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .policy:last-child {
+        margin: 0;
+
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 38px;
+    }
+
+    .messangers {
+        display: flex;
+        flex-direction: row;
+        margin: 35px auto 0;
+        width: 70%;
+        justify-content: space-around;
+    }
+
+    .contacts {
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 35px;
+
+        color: #F9F9F9;
+        margin-bottom: 15px;
+    }
+
+    .contact_email_info {
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20.3396px;
+        line-height: 19px;
+
+        color: rgba(249, 249, 249, 0.4);
+    }
+
+    .contact_email {
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20.3396px;
+        line-height: 19px;
+
+        color: #F9F9F9;
+    }
+
+    .contact_number_info {
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20.34px;
+        line-height: 30px;
+        text-align: center;
+        color: rgba(249, 249, 249, 0.4);
+
+    }
+
+    .contact_number {
+        font-family: 'Gotham Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20.34px;
+        line-height: 19px;
+
+        color: #F9F9F9;
+
+    }
+
+    .contact_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .contact_block2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .messangers .image:hover {
+        transition: .3s;
+        opacity: 0.4;
+    }
+
+
+}

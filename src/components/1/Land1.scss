@@ -40,8 +40,9 @@
     transition: 2s;
     top: 0;
     left: 86px;
-    opacity: 0.5;
-    z-index: -11;
+    opacity: 1;
+    z-index: -9;
+    height: 870px;
 }
 
 // .arr_back_green {
@@ -62,7 +63,8 @@
     right: 0px;
     top: -10px;
     z-index: -10;
-    // width: 100%;
+    width: 100%;
+    max-height: fit-content;
     // height: 120%;
     // margin-left: 954px;
     //===============
@@ -242,6 +244,9 @@
 .arrowPink,
 .arrowBlue,
 .arrowGreen,
+.arrowBlue_mob,
+.arrowGreen_mob,
+.arrowPink_mob,
 .content_timer_backgraund,
 .header_megacampus_menu {
     display: none;
@@ -250,6 +255,7 @@
 
 
 @media (max-width: 430px) {
+
     .container {
         // max-width: 1400px;
         display: flex;
@@ -273,10 +279,14 @@
     }
 
     .arrow,
+    .arrowBlue,
+    .arrowGreen,
+    .arrowPink,
     .image,
     .header_btn {
         display: none;
     }
+    
 
     .header {
         width: auto;
@@ -337,7 +347,7 @@
         padding: 0 3%;
     }
 
-    .arrowBlue {
+    .arrowBlue_mob {
         display: block;
         position: absolute;
         width: 400px;
@@ -346,7 +356,7 @@
         left: -183px;
     }
 
-    .arrowGreen {
+    .arrowGreen_mob {
         display: block;
         position: absolute;
         width: 400px;
@@ -357,7 +367,7 @@
 
     }
 
-    .arrowPink {
+    .arrowPink_mob {
         display: block;
         position: absolute;
         width: 400px;
