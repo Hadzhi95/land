@@ -50,7 +50,7 @@
 .info__text {
     font-family: 'Gotham Pro';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 24px;
     line-height: 38px;
     color: rgba(30, 30, 30, 0.8);
@@ -280,6 +280,10 @@
         width: 100%;
     }
 
+    .image__wrapper{
+        display: none;
+    }
+
     .container {
         display: flex;
         align-items: center;
@@ -294,6 +298,7 @@
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
+        
     }
 
     .row {
@@ -301,6 +306,10 @@
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
+    }
+
+    .info__text{
+        padding: 0 0 0 10px;
     }
 
     .info_box {

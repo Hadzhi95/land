@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from './Land7.scss';
 import check from './check.svg';
 import mobileCheck from './check-mobile.png'
+import Popup from "../Popup/Popup";
 
 function Land7() {
+  const [isPop, setIsPop] = useState(false);
+  console.log(isPop);
+
+  const handlePopupClick = () => {
+    setIsPop(!isPop);
+  };
   return (
     <>
       <div className={styles.container}>
@@ -13,7 +20,10 @@ function Land7() {
             of students to seek help
             and share experiences
           </div>
-          <button className={styles.btn}>Join</button>
+          <button onClick={handlePopupClick} className={styles.btn}>Join</button>
+          {/* {isPop && (
+            <Popup />
+          )} */}
         </div>
         <div className={styles.col}>
           <div className={styles.row}>
@@ -59,6 +69,7 @@ function Land7() {
           </div>
         </div>
         <button className={styles.btn_mobile}>Join</button>
+
       </div>
     </>
   );

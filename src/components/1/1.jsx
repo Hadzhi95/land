@@ -14,14 +14,14 @@ import logo from './Logo.svg';
 import arrBackGreen from './arrow-background-green.png';
 import menu from './Меню.png';
 import desktopBg from './desktop-bg.png';
-import Popup from './Popup';
+import Popup from '../Popup/Popup';
 
 
 
 
 function Land1() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isPopup, setIsPopup] = useState(false);
+  const [isPopup, setIsPopup] = useState(true);
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -35,10 +35,6 @@ function Land1() {
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  const handlePopupClick = () => {
-    setIsPopup(true);
-  };
-
 
   useEffect(() => {
     const countdownDate = new Date("May 01, 2023 00:00:00").getTime();
@@ -137,17 +133,18 @@ function Land1() {
             <div className={styles.end}>
               Apply for a free consultation from our career expert now
             </div>
-            <button onClick={handlePopupClick} className={styles.submit_btn}>
+            <button onClick={() => setIsPopup(!isPopup)} className={styles.submit_btn}>
               Submit
             </button>
-            {isPopup && (
+            {/* {isPopup && (
               <Popup setIsPopup={setIsPopup} />
-            )}
+            )} */}
           </div>
           <img src={backgroundTimer} className={styles.content_timer_backgraund} />
           <img src={desktopBg} className={styles.desktop_content_timer_backgraund} />
         </div>
       </div>
+      <Popup isPopup={isPopup} setIsPopup={setIsPopup} />
 
     </>
   );

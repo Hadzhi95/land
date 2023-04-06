@@ -26,7 +26,7 @@ function Land13() {
               <p className={styles.info__paragraph}>Upon completing the course modules, you will have an opportunity to go through our Career center to receive guidance and support in your career endeavours.</p>
             </div>
             <div className={styles.info}>
-              <p className={styles.info__paragraph}>We have established partnerships with top career centers and employers which will be happy to entertain our graduates for their job openings.</p>
+              <p className={styles.info__paragraph} style={{padding:'0'}}>We have established partnerships with top career centers and employers which will be happy to entertain our graduates for their job openings.</p>
             </div>
           </div>
           <div className={styles.row}>

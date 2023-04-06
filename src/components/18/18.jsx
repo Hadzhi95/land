@@ -23,12 +23,14 @@ function Land18() {
       <div className={styles.cont}>
         <img className={styles.image} src={image} />
         <div className={styles.container}>
+          
           <h3 className={styles.faq}>
             FAQs
           </h3>
           {names?.map((el, i) => (
             <TextModule key={i} id={i} name={el} element={content[i]} open={open} setOpen={setOpen} />
           ))}
+          
         </div>
       </div>
     </>

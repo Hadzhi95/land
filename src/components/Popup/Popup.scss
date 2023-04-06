@@ -1,18 +1,49 @@
 
-.overlay {
+// .overlay {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 120%;
+//     background-color: rgba(30, 30, 30, 0.8);
+//     z-index: 1;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+// }
+
+.modal {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 120%;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(30, 30, 30, 0.8);
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: scale(0);
+
 }
 
-.registration_form {
+.modal_active {
+    display: flex;
+    transform: scale(1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(30, 30, 30, 0.8);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal_content {
     width: 883px;
     height: 500px;
     border-radius: 30px;
@@ -50,7 +81,7 @@ span.icon_search {
     transform: translateY(-50%);
     width: 30px;
     height: 30px;
-    background-image: url(india.svg);
+    background-image: url(../1/india.svg);
     background-size: 100% 100%;
 }
 

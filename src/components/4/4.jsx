@@ -7,12 +7,18 @@ import en from 'react-phone-number-input/locale/en.json'
 import styles from './Land4.scss';
 import card from './Card.svg'
 import india from './india.svg'
+import Success from "./Success";
 
 
 function Land4() {
 
   const inputRef = useRef(null);
   const [phoneNumber, setPhoneNumber] = useState('+91');
+  const [success, setSuccess] = useState(false)
+
+  const handleSuccess = () => {
+    setSuccess(true)
+  }
 
   return (
     <>
@@ -35,7 +41,10 @@ function Land4() {
           </div>
           <div className={styles.col}>
             <input className={styles.email} placeholder="Email" type='email' />
-            <button className={styles.btn}>Get a call</button>
+            <button onClick={handleSuccess} className={styles.btn}>Get a call</button>
+            {success &&(
+              <Success/>
+            )}
           </div>
           <div className={styles.check}>
             <input className={styles.checkbox} type="checkbox" />
