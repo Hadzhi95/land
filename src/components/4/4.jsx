@@ -8,23 +8,14 @@ import styles from './Land4.scss';
 import card from './Card.svg'
 import india from './india.svg'
 import Success from "./Success";
-<<<<<<< HEAD
-=======
 import Popup from "../Popup/Popup_getcall";
 import InputMask from 'react-input-mask'
->>>>>>> 0195e72b68f3451de06e9343e65c10e6ee5ac7d5
 
 
 function Land4() {
 
   const inputRef = useRef(null);
   const [phoneNumber, setPhoneNumber] = useState('+91');
-<<<<<<< HEAD
-  const [success, setSuccess] = useState(false)
-
-  const handleSuccess = () => {
-    setSuccess(true)
-=======
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
 
@@ -43,7 +34,6 @@ function Land4() {
       e.preventDefault();
       console.log("error input");
     }
->>>>>>> 0195e72b68f3451de06e9343e65c10e6ee5ac7d5
   }
 
   return (
@@ -70,17 +60,9 @@ function Land4() {
             <input className={styles.email} value={name} onChange={e => setName(e.target.value)} placeholder="Name" type='text' />
           </div>
           <div className={styles.col}>
-<<<<<<< HEAD
-            <input className={styles.email} placeholder="Email" type='email' />
-            <button onClick={handleSuccess} className={styles.btn}>Get a call</button>
-            {success &&(
-              <Success/>
-            )}
-=======
             <input className={styles.email} placeholder="Email" type='email' value={email} onChange={e => setEmail(e.target.value)}/>
             <button onClick={handleSuccess} className={styles.btn} ref={buttonRef}>Get a call</button>
 
->>>>>>> 0195e72b68f3451de06e9343e65c10e6ee5ac7d5
           </div>
           <div className={styles.check}>
             <input className={styles.checkbox} type="checkbox" />

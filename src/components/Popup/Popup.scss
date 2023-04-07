@@ -1,41 +1,14 @@
-<<<<<<< HEAD
-
-// .overlay {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 120%;
-//     background-color: rgba(30, 30, 30, 0.8);
-//     z-index: 1;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-
-// }
-
-.modal {
-    position: fixed;
-    left: 0;
-    width: 100vw;
-=======
 .overlay {
     position: fixed;
     left: 0;
     width: 100%;
->>>>>>> 0195e72b68f3451de06e9343e65c10e6ee5ac7d5
     height: 100vh;
     background-color: rgba(30, 30, 30, 0.8);
     z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
-<<<<<<<< HEAD:src/components/Popup/Popup.scss
     transform: scale(0);
-========
->>>>>>>> 0195e72b68f3451de06e9343e65c10e6ee5ac7d5:src/components/1/Popup/Popup.scss
-
 }
 
 .modal_active {
@@ -53,13 +26,9 @@
 
 }
 
-.modal_content {
-=======
 
-}
 
 .registration_form {
->>>>>>> 0195e72b68f3451de06e9343e65c10e6ee5ac7d5
     width: 883px;
     height: 500px;
     border-radius: 30px;
@@ -91,15 +60,6 @@
 
 .success_title {
     font-family: 'Gotham Pro';
-<<<<<<< HEAD
-font-style: normal;
-font-weight: 600;
-font-size: 42px;
-line-height: 60px;
-letter-spacing: 0em;
-text-align: center;
-color: #701AC7;
-=======
     font-style: normal;
     font-weight: 600;
     font-size: 42px;
@@ -107,7 +67,6 @@ color: #701AC7;
     letter-spacing: 0em;
     text-align: center;
     color: #701AC7;
->>>>>>> 0195e72b68f3451de06e9343e65c10e6ee5ac7d5
 }
 
 .success_message {
@@ -154,11 +113,6 @@ span.icon_search {
     text-align: left;
     padding-left: 10px;
     border: rgba(30, 30, 30, 0.15);
-<<<<<<< HEAD
-    
-=======
-
->>>>>>> 0195e72b68f3451de06e9343e65c10e6ee5ac7d5
     // background: rgba(249, 249, 249, 0.25);
 }
 
@@ -226,13 +180,9 @@ span.icon_search {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-
-=======
 .checkbox {
     vertical-align: middle;
 }
->>>>>>> 0195e72b68f3451de06e9343e65c10e6ee5ac7d5
 
 .checkbox__text {
     font-family: Gilroy;
@@ -257,8 +207,6 @@ span.icon_search {
         z-index: 10;
     }
 
-<<<<<<< HEAD
-=======
     .success_modal {
         width: 95%;
         height: auto;
@@ -297,7 +245,6 @@ span.icon_search {
     }
 
 
->>>>>>> 0195e72b68f3451de06e9343e65c10e6ee5ac7d5
     .registration_form {
         width: 300px;
         height: 539px;
@@ -338,18 +285,11 @@ span.icon_search {
         gap: 10px;
         margin-bottom: 10px;
     }
-<<<<<<< HEAD
-    
-    .PhoneInput{
-        background-color: white;
-    }
-=======
 
     .PhoneInput {
         background-color: white;
     }
 
->>>>>>> 0195e72b68f3451de06e9343e65c10e6ee5ac7d5
     .tel {
         height: 69px;
         width: 277px;
@@ -411,13 +351,10 @@ span.icon_search {
         cursor: pointer;
     }
 
-<<<<<<< HEAD
-=======
     .checkbox {
         vertical-align: middle;
     }
 
->>>>>>> 0195e72b68f3451de06e9343e65c10e6ee5ac7d5
     .checkbox__text {
         font-family: Gilroy;
         font-size: 12px;

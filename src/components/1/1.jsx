@@ -16,14 +16,10 @@ import logo from './Logo.svg';
 import arrBackGreen from './arrow-background-green.png';
 import menu from './Меню.png';
 import desktopBg from './desktop-bg.png';
-<<<<<<< HEAD
-import Popup from '../Popup/Popup';
-=======
 //import Popup from '../Popup/Popup';
 import Popup from '../Popup/Popup_new';
 import { useSpring, animated } from 'react-spring';
 import bg from './bg.png'
->>>>>>> 0195e72b68f3451de06e9343e65c10e6ee5ac7d5
 
 const Animation = () => {
   const [bgProps, setBgProps] = useSpring(() => ({
@@ -110,16 +106,12 @@ const Animation = () => {
 
 function Land1() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-<<<<<<< HEAD
-  const [isPopup, setIsPopup] = useState(true);
-=======
   const [isPopup, setIsPopup] = useState(false);
   const [active, setIsActive] = useState(false);
   const [animate, setAnimate] = useState(false);
   
   const buttonRef = useRef(null);
   const buttonRect = buttonRef.current && buttonRef.current.getBoundingClientRect();
->>>>>>> 0195e72b68f3451de06e9343e65c10e6ee5ac7d5
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -133,14 +125,11 @@ function Land1() {
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-<<<<<<< HEAD
-=======
   const handlePopupClick = () => {
     setIsPopup(true);
     setIsActive(true);
   };
 
->>>>>>> 0195e72b68f3451de06e9343e65c10e6ee5ac7d5
 
   useEffect(() => {
     setAnimate(true);
@@ -243,21 +232,12 @@ function Land1() {
             <div className={styles.end}>
               Apply for a free consultation from our career expert now
             </div>
-<<<<<<< HEAD
-            <button onClick={() => setIsPopup(!isPopup)} className={styles.submit_btn}>
-              Submit
-            </button>
-            {/* {isPopup && (
-              <Popup setIsPopup={setIsPopup} />
-            )} */}
-=======
             <button onClick={handlePopupClick} ref={buttonRef} className={styles.submit_btn}>
               Submit
             </button>
             {isPopup && (
               <Popup setIsPopup={setIsPopup} active={active} y={Math.round(buttonRect?.top)}/>
             )}
->>>>>>> 0195e72b68f3451de06e9343e65c10e6ee5ac7d5
           </div>
           <img src={backgroundTimer} className={styles.content_timer_backgraund} />
           <img src={desktopBg} className={styles.desktop_content_timer_backgraund} />
