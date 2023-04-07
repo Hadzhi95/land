@@ -18,6 +18,8 @@
   "dependencies": {
     "body-parser": "^1.19.1",
     "intl-tel-input": "^17.0.21",
+    "libphonenumber": "^0.0.10",
+    "libphonenumber-js": "^1.10.24",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-phone-number-input": "^3.2.19",
@@ -37,10 +39,7 @@
     "postcss-loader": "^7.0.2",
     "react-countup": "^6.4.2",
     "react-input-mask": "^2.0.4",
-<<<<<<< HEAD
-=======
     "react-spring": "^9.7.1",
->>>>>>> 0195e72b68f3451de06e9343e65c10e6ee5ac7d5
     "react-visibility-sensor": "^5.1.1",
     "react-waypoint": "^10.3.0",
     "sass": "^1.45.1",
